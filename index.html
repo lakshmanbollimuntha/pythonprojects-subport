@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pythonprojects</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Python Projects</h1>
+    </header>
+    <section>
+        <div class="projects">
+            <div class="project-card">
+              <img src="rooms.jpg" alt="Hotel Management" />
+              <a href="#">Hotel Management</a>
+              <div class="icons">
+                <a class="git" href="https://github.com/lakshmanbollimuntha/Hotel-Rooms-pyhton-MySQL"><i class="fa fa-github" ></i></a>
+                <a class="yt" href="https://youtu.be/MeMPolA_7Oo"><i class="fa fa-youtube" ></i></a>
+              </div>
+              <button class="button" type="button" onclick="openPopup('popup-hotel')">About..</button>
+<!-- The popup -->
+<div class="popup" id="popup-hotel">
+    <h2>About Hotel Management</h2>
+    <p>This is a project that I created to manage the guests and rooms in a hotel.</p>
+    <p>It uses Python and MySQL.</p>
+    <a href="#" onclick="closePopup('popup-hotel')"><span>Close</span></a>
+</div>
+</div>
+<div class="project-card">
+    <img src="todo.webp" alt="ToDoList" />
+    <a href="#">ToDoList</a>
+    <div class="icons">
+        <a class="git" href="https://github.com/lakshmanbollimuntha/todolistpython"><i class="fa fa-github"></i></a>
+        <a class="yt" href="https://youtu.be/ATYPCpqDPZQ"><i class="fa fa-youtube"></i></a>
+    </div>
+    <button class="button" type="button" onclick="openPopup('popup-todolist')">About..</button>
+    <!-- The popup -->
+    <div class="popup" id="popup-todolist">
+        <h2>About ToDoList</h2>
+        <p>This is a project that helps you manage your tasks and to-do items.</p>
+        <p>It uses Python and MySQL to create an interactive to-do list.</p>
+        <a href="#" onclick="closePopup('popup-todolist')"><span>Close</span></a>
+    </div>
+</div>
+    </section>
+    <footer>
+        <p>All rights reserved by snehith &amp; lakshman</p>
+    </footer>
+</body>
+<script>
+    function openPopup(popupId) {
+        // Get the popup element by id.
+        var popup = document.getElementById(popupId);
+        // Show the popup.
+        popup.style.display = "block";
+    }
+    
+    function closePopup(popupId) {
+        // Get the popup element by id.
+        var popup = document.getElementById(popupId);
+        // Hide the popup.
+        popup.style.display = "none";
+    }
+    </script>
+</html>

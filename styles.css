@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1f242d; /* Set background color */
+  color:#0ef; /* Set text color */
+}
+
+header {
+  background-color: #40414f; /* Set header background color */
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Nanum Gothic Coding', cursive;
+}
+
+.projects {
+  display: flex;
+  overflow-x: auto;
+}
+
+.project-card {
+  flex: 0 0 300px;
+  height: 320px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #40414f;; /* Set card background color to black */
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  font-family: 'Nanum Gothic Coding', cursive;
+}
+
+
+.project-card img {
+  max-width: 80%;
+  max-height: 50%;
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color:#0ef; /* Set link color */
+  font-weight: bold;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.icons{
+  margin-top: 25px;
+  font-size: 2.5rem;
+}
+.git{
+  padding-right: 25px;
+}
+.yt{
+  padding-left: 25px;
+}
+.git:hover{
+  font-size: 2.7rem;
+  color:  rgb(5, 244, 77);
+  
+}
+.yt:hover{
+  font-size: 2.7rem;
+  color: red;
+  
+}
+.button{
+  font-family: 'Nanum Gothic Coding', cursive;
+  color: #0ef;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #40414f;
+  margin-top: 20px;
+
+}
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+
+  padding: 54px 20px 74px 26px;
+  border-radius: 5px;
+  margin: -19px 2px -13px 2px;
+   /* Fallback color */
+  background-color:black; /* Black w/ opacity */
+  padding:20px;
+}
+.popup-todolist {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+
+  padding: 54px 20px 74px 26px;
+  border-radius: 5px;
+  margin: -19px 2px -13px 2px;
+  background-color: #fff; /* Fallback color */
+  background-color:black; /* Black w/ opacity */
+  padding:20px;
+}
+
+.popup p {
+  margin-bottom: 10px;
+}
+
+.popup a {
+  color: #0ef;
+  text-decoration: none;
+}
+span{
+  color:red;
+}
+footer {
+  background-color:#40414f;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .project-card {
+    flex: 0 0 300px;
+    height: 320px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #40414f;;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  footer {
+    background-color:#40414f;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 165px;
+     
+  }
+  
+}
+@media screen and (max-width: 767px) {
+  .projects {
+    display: block; 
+    padding: 1rem;
+  }
+  
+  .project-card {
+    flex: 1;
+    height: auto;
+    margin: 0 0 1rem;
+  }
+}
